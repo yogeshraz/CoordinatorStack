@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUICoordinator
 
 struct MainView: View {
     @Environment(Coordinator<MainCoordinatorViews>.self) private var mainCoordinator

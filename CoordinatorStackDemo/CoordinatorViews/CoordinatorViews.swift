@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUICoordinator
 
 enum MainCoordinatorViews: Coordinatable {
     var id: UUID {.init() }

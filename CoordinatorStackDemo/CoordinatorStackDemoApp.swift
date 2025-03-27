@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUICoordinator
 
 @main
 struct CoordinatorStackDemoApp: App {

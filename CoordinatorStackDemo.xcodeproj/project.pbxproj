@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A175F9552D95513200846D35 /* SwiftUICoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = A175F9542D95513200846D35 /* SwiftUICoordinator */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A1DC10FB2D93F1450098BDBE /* CoordinatorStackDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorStackDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A175F9552D95513200846D35 /* SwiftUICoordinator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = CoordinatorStackDemo;
 			packageProductDependencies = (
+				A175F9542D95513200846D35 /* SwiftUICoordinator */,
 			);
 			productName = CoordinatorStackDemo;
 			productReference = A1DC10FB2D93F1450098BDBE /* CoordinatorStackDemo.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = A1DC10F22D93F1450098BDBE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A175F9532D95513200846D35 /* XCRemoteSwiftPackageReference "SwiftUICoordinator" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A1DC10FC2D93F1450098BDBE /* Products */;
 			projectDirPath = "";
@@ -322,6 +331,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A175F9532D95513200846D35 /* XCRemoteSwiftPackageReference "SwiftUICoordinator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yogeshraz/SwiftUICoordinator.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A175F9542D95513200846D35 /* SwiftUICoordinator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A175F9532D95513200846D35 /* XCRemoteSwiftPackageReference "SwiftUICoordinator" */;
+			productName = SwiftUICoordinator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1DC10F32D93F1450098BDBE /* Project object */;
 }
