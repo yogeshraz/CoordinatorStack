@@ -22,6 +22,7 @@ struct CoordinatorStack<CoordinatorViews: Coordinatable>: View {
                 .navigationDestination (for: CoordinatorViews.self) { $0 }
                 .sheet(item: $coordinator.sheet) { $0 }
                 .fullScreenCover(item: $coordinator.fullScreenCover) { $0 }
+                .showAlert(isShowing: $coordinator.isShowingAlert, details: coordinator.alertDetails)
         }
         .environment(coordinator)
     }

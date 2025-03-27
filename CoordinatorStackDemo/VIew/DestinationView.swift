@@ -18,6 +18,41 @@ struct MainView: View {
             Button("Signup") {
                 mainCoordinator.push(page: .signup)
             }
+            
+            Button("Alert") {
+                mainCoordinator.showBasicAlert(title: "Alert", message: "Basic Alert")
+            }
+            
+            Button("Alert With Option") {
+                mainCoordinator.showAlertWithAction(title: "Alert", message: "Action Alert") {
+                    print("Option Selected")
+                }
+            }
+            
+            Button("Alert with multiple option") {
+                mainCoordinator.showAlertWithMultiAction(title: "Alert", message: "Messagesss") {
+                    print("closer")
+                } closerCancel: {
+                    print("closerCancel")
+                }
+
+            }
+            
+            Button("Alert with multiple option Array") {
+                let button1 = AlertButton(title: "1", action: {
+                    print("1")
+                })
+                let button2 = AlertButton(title: "2", action: {
+                    print("2")
+                })
+                let button3 = AlertButton(title: "3", action: {
+                    print("3")
+                })
+                let button4 = AlertButton(title: "4", action: {
+                    print("4")
+                })
+                mainCoordinator.showAlertWithMultiAction(title: "Alert", message: "Array", buttons: [button1, button2, button3, button4])
+            }
         }
     }
 }
@@ -44,6 +79,37 @@ struct LoginView: View {
             
             Button("Pop") {
                 mainCoordinator.pop(type: .sheet)
+            }
+            Button("Alert") {
+                let button1 = AlertButton(title: "1", action: {
+                    print("1")
+                })
+                let button2 = AlertButton(title: "2", action: {
+                    print("2")
+                })
+                let button3 = AlertButton(title: "3", action: {
+                    print("3")
+                })
+                let button4 = AlertButton(title: "4", action: {
+                    print("4")
+                })
+                loginCoordinator.showAlertWithMultiAction(title: "Alert", message: "Array", buttons: [button1, button2, button3, button4])
+            }
+            
+            Button("Sheet") {
+                let button1 = AlertButton(title: "1", action: {
+                    print("1")
+                })
+                let button2 = AlertButton(title: "2", action: {
+                    print("2")
+                })
+                let button3 = AlertButton(title: "3", action: {
+                    print("3")
+                })
+                let button4 = AlertButton(title: "4", action: {
+                    print("4")
+                })
+                loginCoordinator.showAlertWithMultiAction(title: "Alert", message: "Array", option: .confirmationDialog, buttons: [button1, button2, button3, button4])
             }
         }
     }

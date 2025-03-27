@@ -12,6 +12,10 @@ class Coordinator<CoordinatorPage: Coordinatable> {
     var path:NavigationPath = NavigationPath()
     var sheet: CoordinatorPage?
     var fullScreenCover: CoordinatorPage?
+    
+    var isShowingAlert: Bool = false
+    var alertDetails: AlertDetails = AlertDetails(title: "", message: "", buttons: [],dialogOption: .alert, titleVisibility: .automatic)
+    
     enum PushType {
         case link
         case sheet
