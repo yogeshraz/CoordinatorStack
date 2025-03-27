@@ -84,7 +84,9 @@ enum LoginCoordinatorViews: Coordinatable {
     }
 }
 ```
+
 2. Set  `Coordinator stack` in ‘@main’
+
 ```
 @main
 struct CoordinatorStackDemoApp: App {
