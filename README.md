@@ -96,8 +96,8 @@ struct CoordinatorStackDemoApp: App {
 }
 ```
 
-```
 3. Create a  `Coordinator ` object in content view
+```
 @Environment(Coordinator<MainCoordinatorViews>.self) private var mainCoordinator
 
 struct MainView: View {
